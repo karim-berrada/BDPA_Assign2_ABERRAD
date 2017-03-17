@@ -136,7 +136,7 @@ public class similarity_b extends Configured implements Tool {
 
    			// Compute the number of words to keep 
    			int nb_words = row_words.size() - (int) Math.ceil(0.6 * row_words.size() ) + 1;
-   			// Write the first nb_words words in context with the word as key and the line id as value
+   			// We take the first number of words, the key is the word, the value is the id of the row
 
    			int i = 1;
    			// Using break as soon as we reached the number of words
